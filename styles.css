@@ -1,13 +1,9 @@
 /* CSS styles for the website */
 
-html, body{
-  height: 100%;
-  margin: 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -46,7 +42,7 @@ nav li a:hover {
 
 main {
   padding: 20px;
-  flex: 1;
+  flex-grow: 1;
 }
 
 footer {
