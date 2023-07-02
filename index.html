@@ -16,43 +16,11 @@
         <li><a href="about.html">About</a></li>
       </ul>
     </nav>
-    <input type="text" id="searchBox" placeholder="输入关键字搜索">
-    <button onclick="search()">搜索</button>
-    <div id="searchResults"></div>
-    
-
-    <script>
-        function search() {
-            var query = document.getElementById('searchBox').value;
-            fetch('/search', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: 'query=' + encodeURIComponent(query)
-            })
-            .then(response => response.json())
-            .then(data => displayResults(data));
-        }
-
-        function displayResults(results) {
-            var resultDiv = document.getElementById('searchResults');
-            resultDiv.innerHTML = '';
-
-            if (results.length === 0) {
-                resultDiv.innerHTML = '没有找到相关内容。';
-            } else {
-                results.forEach(function(result) {
-                    var postLink = document.createElement('a');
-                    postLink.href = '/post/' + result.id;
-                    postLink.innerText = '文章 ' + result.id;
-                    var br = document.createElement('br');
-                    resultDiv.appendChild(postLink);
-                    resultDiv.appendChild(br);
-                });
-            }
-        }
-    </script>
+    <div id="search-container">
+    <input type="text" id="search-input" placeholder="输入关键词">
+    <div id="search-results"></div>
+    </div>
+    <script src="search.js"></script>
 
     <main>
       <section>
