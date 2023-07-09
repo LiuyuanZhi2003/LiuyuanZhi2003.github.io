@@ -1,42 +1,142 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+import url("https://fonts.googleapis.com/css?family=Inter:400|Roboto:400|Arimo:400");
+
+@font-face {
+  font-family: "SF Pro Display-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://fonts.animaapp.com/SFProDisplay-Medium") format("opentype");
 }
 
-header {
-  background-color: #f7f7f7;
-  padding: 20px;
+.zhu-ye-mian {
+  align-items: flex-start;
+  background-color: var(--system-backgroundssb-l-primary);
+  border: 1px none;
+  display: flex;
+  height: 1280px;
+  width: 1920px;
 }
 
-header h1 {
-  margin: 0;
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
 }
 
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.overlap-group {
+  height: 300px;
+  position: relative;
+  width: 1920px;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+.zhu-ye-mian .text {
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 244px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
+.text-4 {
+  left: 694px;
 }
 
-section {
-  padding: 20px;
+.text-1 {
+  left: 100px;
 }
 
-footer {
-  background-color: #f7f7f7;
-  padding: 20px;
+.text-3 {
+  left: 508px;
+}
+
+.x1 {
+  height: 299px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1920px;
+}
+
+.text-5 {
+  left: 952px;
+  width: 205px;
+}
+
+.text-2 {
+  left: 286px;
+}
+
+.image-1 {
+  height: 184px;
+  left: 497px;
+  mix-blend-mode: darken;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 860px;
+}
+
+.content {
+  align-items: center;
+  background-color: var(--system-backgroundssb-l-primary);
+  border-radius: 2px;
+  display: flex;
+  gap: 24px;
+  height: 48px;
+  left: 1271px;
+  padding: 12px 16px;
+  position: absolute;
+  top: 245px;
+  width: 370px;
+}
+
+.placeholder-label {
+  color: var(--label-colorslc-l-secondary);
+  flex: 1;
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-xs);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.magnifyingglass {
+  height: 28px;
+  margin-bottom: -2px;
+  margin-top: -2px;
+  min-width: 28px;
+  position: relative;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.magnifyingglass-1 {
+  color: var(--label-colorslc-l-secondary);
+  font-family: var(--font-family-sf_pro_display-medium);
+  font-size: var(--font-size-xxs);
+  font-weight: 500;
+  height: 28px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 32.1px;
+  position: absolute;
   text-align: center;
-  font-size: 14px;
-  color: #777;
+  top: -1px;
+  white-space: nowrap;
+  width: 28px;
+}
+
+.rectangle-1 {
+  background-color: 
+#d9d9d999;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 230px;
+  width: 1920px;
 }
