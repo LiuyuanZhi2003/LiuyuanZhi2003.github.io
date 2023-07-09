@@ -7,15 +7,10 @@
 }
 
 .zhu-ye-mian {
-  background: linear-gradient(
-    180deg,
-    
-rgb(198, 255, 221) 24.48%,
-    
-rgb(251, 215, 134) 52.6%,
-    
-rgb(247, 121, 125) 80.64%
-  );
+  background: linear-gradient(180deg, 
+rgb(198, 255, 221) 24.48%, 
+rgb(251, 215, 134) 52.6%, 
+rgb(247, 121, 125) 80.64%);
   background-color: 
 rgba(255, 255, 255, 1);
   border: 1px none;
@@ -55,13 +50,9 @@ rgba(255, 255, 255, 1);
 }
 
 .rectangle-3 {
-  background: linear-gradient(
-    180deg,
-    
-rgb(18, 194, 233) 0%,
-    
-rgb(196, 113, 237) 100%
-  );
+  background: linear-gradient(180deg, 
+rgb(18, 194, 233) 0%, 
+rgb(196, 113, 237) 100%);
   border: 10px solid;
   border-color: var(--white);
   border-radius: 54.5px;
@@ -74,13 +65,9 @@ rgb(196, 113, 237) 100%
 }
 
 .rectangle-4 {
-  background: linear-gradient(
-    180deg,
-    
-rgb(18, 194, 233) 0%,
-    
-rgb(196, 113, 237) 100%
-  );
+  background: linear-gradient(180deg, 
+rgb(18, 194, 233) 0%, 
+rgb(196, 113, 237) 100%);
   border: 10px solid;
   border-color: var(--white);
   border-radius: 54.5px;
@@ -152,4 +139,140 @@ transparent;
   position: absolute;
   top: 215px;
   width: 1128px;
+}
+
+:root {
+  --black: 
+rgba(0, 0, 0, 1);
+  --azure-radiance: 
+rgba(0, 132, 255, 1);
+  --blue: 
+rgba(5, 0, 255, 1);
+  --malachite: 
+rgba(13, 208, 91, 1);
+  --concord-2: 
+rgba(125, 125, 125, 0.8);
+  --concord: 
+rgba(125, 125, 125, 1);
+  --alto: 
+rgba(217, 217, 217, 1);
+  --lemon-glacier: 
+rgba(249, 255, 0, 1);
+  --red: 
+rgba(255, 0, 0, 1);
+  --heat-wave: 
+rgba(255, 122, 0, 1);
+  --white: 
+rgba(255, 255, 255, 1);
+
+  --font-size-s: 30px;
+  --font-size-m: 40px;
+  --font-size-l: 48px;
+  --font-size-xl: 80px;
+  --font-size-xxxl: 190px;
+  --font-size-xl2: 128px;
+
+  --font-family-erica_one: "Erica One";
+  --font-family-irish_grover: "Irish Grover";
+  --font-family-italianno: "Italianno";
+}
+
+/* Classes */
+
+.irishgrover-normal-lemon-glacier-40px {
+  color: var(--lemon-glacier);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-blue-40px {
+  color: var(--blue);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-black-48px {
+  color: var(--black);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-malachite-40px {
+  color: var(--malachite);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-white-40px {
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.ericaone-normal-black-128px {
+  color: var(--black);
+  font-family: var(--font-family-erica_one);
+  font-size: var(--font-size-xl2);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-azure-radiance-40px {
+  color: var(--azure-radiance);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-red-40px {
+  color: var(--red);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-black-40px {
+  color: var(--black);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-heat-wave-40px {
+  color: var(--heat-wave);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-concord-30px {
+  color: var(--concord);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+.italianno-normal-white-80px {
+  color: var(--white);
+  font-family: var(--font-family-italianno);
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-black-30px {
+  color: var(--black);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
+.irishgrover-normal-concord-40px {
+  color: var(--concord-2);
+  font-family: var(--font-family-irish_grover);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
 }
