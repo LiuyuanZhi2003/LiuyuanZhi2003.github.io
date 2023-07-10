@@ -12,8 +12,8 @@
   background-color: var(--system-backgroundssb-l-primary);
   border: 1px none;
   display: flex;
-  height: 1280px;
-  width: 1920px;
+  height: 768px;
+  width: 1366px;
 }
 
 .hidden,
@@ -25,7 +25,7 @@
 .overlap-group {
   height: 300px;
   position: relative;
-  width: 1920px;
+  width: 1366px;
 }
 
 .zhu-ye-mian .text {
@@ -54,7 +54,7 @@
   position: absolute;
   opacity: 0.5;
   top: 0;
-  width: 1920px;
+  width: 1366px;
 }
 
 .text-5 {
@@ -139,5 +139,5 @@
   left: 0;
   position: absolute;
   top: 230px;
-  width: 1920px;
+  width: 1366px;
 }
