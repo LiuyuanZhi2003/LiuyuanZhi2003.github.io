@@ -12,8 +12,8 @@
   background-color: var(--system-backgroundssb-l-primary);
   border: 1px none;
   display: flex;
-  height: 768px;
-  width: 1366px;
+  height: 100%;
+  width: 100%;
 }
 
 .hidden,
@@ -25,7 +25,7 @@
 .overlap-group {
   height: 300px;
   position: relative;
-  width: 1366px;
+  width: 100%;
 }
 
 .zhu-ye-mian .text {
@@ -54,7 +54,7 @@
   position: absolute;
   opacity: 0.8;
   top: 0;
-  width: 1366px;
+  width: 100%;
 }
 
 .text-5 {
@@ -139,17 +139,7 @@
   left: 0;
   position: absolute;
   top: 230px;
-  width: 1366px;
+  width: 100%;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-/* 使用视口单位设置元素尺寸 */
-.element {
-  width: 100vw; /* 宽度为视口宽度的100% */
-  height: 100vh; /* 高度为视口高度的100% */
-}
