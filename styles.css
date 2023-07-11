@@ -7,13 +7,30 @@
   src: url("https://fonts.animaapp.com/SFProDisplay-Medium") format("opentype");
 }
 
+:root {
+  --black: rgba(0, 0, 0, 1);
+  --label-colorslc-l-secondary: rgba(60, 60, 67, 0.6);
+  --system-backgroundssb-l-primary: rgba(255, 255, 255, 1);
+
+  --font-size-xxs: 11.5px;
+  --font-size-xs: 17px;
+  --font-size-s: 18px;
+  --font-size-m: 36px;
+
+  --font-family-arimo: "Arimo";
+  --font-family-inter: "Inter";
+  --font-family-microsoft_yahei-regular: "Microsoft YaHei-Regular";
+  --font-family-roboto: "Roboto";
+  --font-family-sf_pro_display-medium: "SF Pro Display-Medium";
+}
+
 .zhu-ye-mian {
   align-items: flex-start;
   background-color: var(--system-backgroundssb-l-primary);
   border: 1px none;
   display: flex;
-  height: 100%;
-  width: 100%;
+  height: 1280px;
+  width: 1920px;
 }
 
 .hidden,
@@ -25,7 +42,7 @@
 .overlap-group {
   height: 300px;
   position: relative;
-  width: 100%;
+  width: 1920px;
 }
 
 .zhu-ye-mian .text {
@@ -52,9 +69,8 @@
   left: 0;
   object-fit: cover;
   position: absolute;
-  opacity: 0.8;
   top: 0;
-  width: 100%;
+  width: 1920px;
 }
 
 .text-5 {
@@ -133,13 +149,26 @@
 }
 
 .rectangle-1 {
-  background-color: 
-#d9d9d999;
+  background-color: #d9d9d999;
   height: 70px;
   left: 0;
   position: absolute;
   top: 230px;
-  width: 100%;
+  width: 1920px;
 }
 
+.text-inter-normal-black-36px {
+  color: var(--black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  font-style: normal;
+}
 
+.microsoftyahei-regular-normal-white-18px {
+  color: var(--system-backgroundssb-l-primary);
+  font-family: var(--font-family-microsoft_yahei-regular);
+  font-size: var(--font-size-s);
+  font-weight: 400;
+  font-style: normal;
+}
