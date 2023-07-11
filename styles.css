@@ -147,3 +147,11 @@
   top: 230px;
   width: 1920px;
 }
+
+.rectangle-1 .text-1,
+.rectangle-1 .text-2,
+.rectangle-1 .text-3,
+.rectangle-1 .text-4,
+.rectangle-1 .text-5 {
+  flex: 1;
+}
