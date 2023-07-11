@@ -120,7 +120,7 @@
 
 .rectangle-1 {
   background-color: #d9d9d999;
-  display: flex;
+  <!-- display: flex; -->
   justify-content: space-between;
   align-items: center;
   height: 70px;
