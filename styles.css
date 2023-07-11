@@ -120,11 +120,12 @@
 
 .rectangle-1 {
   background-color: #d9d9d999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
-  left: 0;
-  position: absolute;
-  top: 230px;
   width: 1920px;
+  padding: 0 20px;
 }
 
 .rectangle-1 .text-1,
