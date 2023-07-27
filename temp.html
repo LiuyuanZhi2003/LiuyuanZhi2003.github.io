@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Needs</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, 
+              rgb(198, 255, 221) 24.48%, 
+              rgb(251, 215, 134) 52.6%, 
+              rgb(247, 121, 125) 80.64%);
+        }
+
+        .title-container {
+            position: relative;
+            animation: move-up 1s forwards; 
+        }
+
+        .title-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        .title {
+            font-size: 8vw; /* Responsive font size based on viewport width */
+            text-align: center;
+            background: linear-gradient(to right, red, orange, yellow, lightblue, darkblue, black, black, black, black, black);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-family: "Garamond", sans-serif;
+            font-weight: bold;
+        }
+
+        .typing-text-container {
+            text-align: center;
+            margin-top: 20px; 
+			animation: move-up 1s forwards; 
+			color: gray;
+            font-size: 1vw; /* Responsive font size based on viewport width */
+        }
+
+        @keyframes move-up {
+            to {
+                transform: translateY(-150px); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title-container">
+        <div class="title">Mutual Needs</div>
+    </div>
+    <div class="typing-text-container">
+        <span id="typing-text"></span>
+    </div>
+    
+    <script>
+        const text = "请选择你的需求\n我们将为你匹配最符合要求的用户......";
+        const typingTextElement = document.getElementById("typing-text");
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                if (text.charAt(index) === '\n') {
+                    typingTextElement.innerHTML += '<br>'; // Convert '\n' to a line break
+                } else {
+                    typingTextElement.innerHTML += text.charAt(index);
+                }
+                index++;
+                setTimeout(typeWriter, 100); // Adjust the typing speed here (in milliseconds)
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+</html>
