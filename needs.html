@@ -13,9 +13,9 @@
             justify-content: center;
             align-items: center;
             background: linear-gradient(180deg, 
-              rgb(198, 255, 221) 24.48%, 
-              rgb(251, 215, 134) 52.6%, 
-              rgb(247, 121, 125) 80.64%);
+                rgb(198, 255, 221) 24.48%, 
+                rgb(251, 215, 134) 52.6%, 
+                rgb(247, 121, 125) 80.64%);
         }
 
         .title-container {
@@ -30,7 +30,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            border-radius: 20px;
+            border-radius: 60px;
             background-color: rgba(255, 255, 255, 0.2);
             z-index: -1;
         }
@@ -49,8 +49,8 @@
         .typing-text-container {
             text-align: center;
             margin-top: 20px; 
-			animation: move-up 1s forwards; 
-			color:gray;
+            animation: move-up 1s forwards; 
+            color:gray;
         }
 
         @keyframes move-up {
@@ -58,6 +58,43 @@
                 transform: translateY(-150px); 
             }
         }
+    
+    @keyframes move-button1 {
+            to {
+                transform: translateY(-100px); 
+            }
+        }
+    @keyframes move-button2 {
+            to {
+                transform: translateY(-50px); 
+            }
+        }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .custom-button1 {
+        background: linear-gradient(135deg, #12C2E9, #C471ED);
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 10px 100px;
+        cursor: pointer;
+        border-radius: 30px;
+        animation: move-button1 1s forwards; 
+    }
+    
+    .custom-button2 {
+        background: linear-gradient(135deg, #12C2E9, #C471ED);
+        color: #FFFFFF;
+        font-size: 30px;
+        padding: 10px 100px;
+        cursor: pointer;
+        border-radius: 30px;
+        animation: move-button2 1s forwards; 
+    }
     </style>
 </head>
 <body>
@@ -87,5 +124,22 @@
 
         typeWriter();
     </script>
+    
+    <div>
+    <div class="custom-button1" id="button1">转  租</div>
+    <div class="custom-button2" id="button2">换  钱</div>
+    </div>
+    <script>
+    document.getElementById("button1").onclick = function() 
+    {
+        window.location.href = "xbyb.html";     
+    };
+    
+    document.getElementById("button2").onclick = function() 
+    {
+        window.location.href = "money.html";     
+    };
+</script>
 </body>
 </html>
+
